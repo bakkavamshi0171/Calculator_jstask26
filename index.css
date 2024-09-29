@@ -1,0 +1,55 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+.calculator{
+    width:350px;
+    height: 450px;
+    background-color: black;
+    padding: 25px;
+    border-radius: 10px;
+}
+.displayDiv{
+    width:100%;
+    height:25%;
+}
+#displayPara{
+    width:100%;
+    height:70%;
+    background-color: yellow;
+    border-radius:15px;
+    font-size:40px;
+    font-weight: 500;
+    text-align: right;
+    padding: 15px;
+    overflow: hidden;
+}
+#buttons{
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr ;
+   grid-template-rows: 55px 55px 55px 55px 55px;
+   gap: 5px;
+}
+.btn{
+    font-size: large;
+    border-radius: 15px;
+}
+#equalto,#add,#subtract,#multiple,#division,#modulo,#del,#ac{
+    background-color:#0000ff;
+    color: white;
+}
+#dot,#subtract,#equalto,#add,#division{
+    font-size: xx-large;
+}
+#multiple,#modulo{
+    font-size: x-large;
+}
+.btn:active{
+    background-color: #0000ff;
+    transform: scale(1.05);
+}
